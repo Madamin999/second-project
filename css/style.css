@@ -42,6 +42,38 @@ a, a:hover{
    color:#B00000;
 
 }
+.burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+}
+.burger-line{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #000000;
+    top:0 ;
+}
+.burger-line:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #000;
+    top: 20px
+
+}
+.burger-line:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #000;
+    top: -10px
+
+}
 /*HEADER*/
 #hero {
     padding-top: 150px;
@@ -57,7 +89,7 @@ a, a:hover{
     width: 50%;
 }
 .hero-items {
-    display: flex;
+
 
 }
 .hero-item {
@@ -66,10 +98,22 @@ a, a:hover{
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
-    /* identical to box height */
+    color: rgba(214, 212, 212, 0.88);
+    transition: all 0.5s ease;
+
+
+
+}
+.hero-item:hover{
+    margin: 0 1px;
+    width: 248px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
 
 
     color: #B00000;
+
 
 }
 .hero-title {
@@ -95,13 +139,22 @@ a, a:hover{
     font-size: 14px;
     line-height: 24px;
 
-    color: #FFFFFF;
-    background: #B00000;
+    color: #000000;
+    background: transparent;
     box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
     border-radius: 8px;
     width: 160px;
     height: 48px;
+    margin-left: 20px;
+    border:none;
+    transition: all 2s ease;
 
+}
+.hero-btn1:hover {
+    box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
+    background: #B00000;
+    color: #FFFFFF;
+    border-radius: 8px;
 
 }
 .hero-btn2 {
@@ -117,29 +170,39 @@ a, a:hover{
     height: 48px;
     margin-left: 20px;
     border:none;
+    transition: all 2s ease;
+
+}
+.hero-btn2:hover {
+    box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
+    background: #B00000;
+    color: #FFFFFF;
+    border-radius: 8px;
 
 }
 
 .hero-img {
-  position: absolute;
-    z-index: -1;
+
 }
+/*
 .el-1 {
 position: absolute;
 margin-left: 450px;
-    margin-top: 370px
-;
+    margin-top: 370px;
+    display: flex;
 }
 .el-2 {
  position: absolute;
     margin-top: 320px;
     margin-left: -30px;
+    display: flex;
 }
 .el-3 {
    position: absolute;
     margin-left: 480px;
     margin-top: 50px;
-}
+    display: flex;
+}*/
 /*HEADER*/
 /*WHYUS*/
 #whyus {
@@ -249,10 +312,12 @@ margin-left: 450px;
 
 /*tab*/
 .tabs {
-    font-size: 0;
-    margin-left: 450px;
-}
 
+
+}
+.tab-1{
+
+}
 .tabs>input[type="radio"] {
     display: none;
 }
@@ -260,7 +325,7 @@ margin-left: 450px;
 .tabs>div {
     /* скрыть контент по умолчанию */
     display: none;
-    border: 1px solid #e0e0e0;
+
     padding: 10px 15px;
     font-size: 16px;
 }
@@ -298,12 +363,70 @@ margin-left: 450px;
     background-color: #fff;
     border-bottom: 1px solid #fff;
 }
-.col-4 {
+.card-1 {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 290px;
 
 }
- .col-4:nth-child(2){
 
- }
+.card-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 25px;
+    color: #000000;
+    padding: 15px 15px;
+}
+.card-subtitle {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    width: 237px;
+    height: 54px;
+    color: #000000;
+    margin: 15px 15px;
+}
+.subtitle-2{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 32px;
+    color: #000000;
+    padding: 0 15px;
+}
+.subtitle-3 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    margin: 15px 15px;
+}
+.card-btn {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 235px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    margin: 15px 15px;
+}
+.crd-com {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #808080;
+    margin: 15px 15px;
+}
+
+
  /*tab*/
 /*testimonials*/
 #testimonials {
@@ -501,15 +624,22 @@ padding-top: 50px;
     text-align: center;
     width: 208px;
     height: 48px;
-    background: #B00000;
+
+    background:#ff4941;
     border-radius: 8px;
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 100px;
+    transition: all 2s ease;
 
 
+}
+.red-btn:hover{
+    background: #B00000;
+    border-radius: 8px;
+    color: #FFFFFF;
 }
 .fa-whatsapp {
     width: 21.88px;

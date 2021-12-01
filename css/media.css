@@ -1,0 +1,90 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 1090px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 900px;
+    }
+    .hero-title {
+        font-size: 46px;
+    }
+    .hero-img {
+        width: 301px;
+
+    }
+    .icn {
+        margin-left: 50px;
+    }
+    .prising-title {
+        margin-left: 150px;
+    }
+    .card-1 {
+        width: 250px;
+    }
+    .card-btn {
+        width: 200px;
+    }
+    .testimonials-1 {
+        margin-left: 500px;
+    }
+    .testimonials-2 {
+        margin-left: 500px;
+    }
+    .testimonials-3 {
+        margin-left: 50px;
+    }
+    .cta {
+        width: 842px;
+    }
+    .cta-title {
+        font-size: 50px;
+    }
+    .el3-1 {
+        margin-left: 402px;
+    }
+    .n20 {
+        margin-left: 5px;
+    }
+    .content2 {
+        margin-left: 345px;
+        margin-top: -137px;
+    }
+    }
+
+
+}
+@media (max-width: 768px){
+    .container {
+        width: 700px;
+    }
+    .burger {
+        display: block;
+    }
+    .hero-title {
+        font-size: 34px;
+        line-height: 44px;
+        width: 200px;
+
+    }
+    .nav-items, .nav-tel, .item, .nav-item  {
+        display: none;
+    }
+
+    .hero-img {
+        width: 303px;
+        height: 300px;
+        margin-top: 58px;
+    }
+    .el-3 {left:1px;}
+    .col-md-12{
+        width: 100%;
+    }
+
+    }
+
+@media (max-width: 416px){}
+@media (max-width: 375px){}
+@media (max-width: 320px){}
+
